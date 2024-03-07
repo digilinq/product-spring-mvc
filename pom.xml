@@ -6,15 +6,15 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
-    <groupId>org.digilinq.payment.gateway</groupId>
-    <artifactId>payment-gateway-parent</artifactId>
+    <groupId>com.eightbits.mvc.ecommerce.retail</groupId>
+    <artifactId>product-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Template</name>
+    <name>Product</name>
     <description>Template Service</description>
 
     <properties>
