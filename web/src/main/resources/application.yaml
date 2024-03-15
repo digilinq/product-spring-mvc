@@ -1,0 +1,12 @@
+connect to the database
+
+---
+spring:
+  data:
+    mongodb:
+      database: test
+      uri: mongodb://localhost:27017/test
+      auto-index-creation: true
+  config:
+    activate:
+      on-profile: local
