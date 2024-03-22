@@ -12,7 +12,6 @@
     <artifactId>product-repository</artifactId>
 
     <properties>
-        <embed-mongo.version>4.12.2</embed-mongo.version>
     </properties>
 
     <dependencies>

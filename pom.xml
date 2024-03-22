@@ -34,6 +34,7 @@
         <mapstruct.version>1.6.0.Beta1</mapstruct.version>
         <lombok.version>1.18.28</lombok.version>
         <lombok-mapstruct.version>0.2.0</lombok-mapstruct.version>
+        <embed-mongo.version>4.12.2</embed-mongo.version>
     </properties>
 
     <modules>
