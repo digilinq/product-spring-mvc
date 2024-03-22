@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 @IntegrationTest
 class ProductApplicationTest {
+
     @Test
     void contextLoads() {
 
