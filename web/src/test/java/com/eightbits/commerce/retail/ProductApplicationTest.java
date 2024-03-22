@@ -1,7 +1,12 @@
 package com.eightbits.commerce.retail;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.eightbits.commerce.retail.integration.IntegrationTest;
+import org.junit.jupiter.api.Test;
 
+@IntegrationTest
 class ProductApplicationTest {
+    @Test
+    void contextLoads() {
 
+    }
 }
