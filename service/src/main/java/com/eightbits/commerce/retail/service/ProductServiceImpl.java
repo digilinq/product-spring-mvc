@@ -6,6 +6,9 @@ import com.eightbits.commerce.retail.exceptions.ProductNotFoundException;
 import com.eightbits.commerce.retail.mappings.ProductMapper;
 import com.eightbits.commerce.retail.repository.ProductRepository;
 import com.eightbits.commerce.retail.utils.With;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 
@@ -34,5 +37,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void deleteProduct(String id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public Page<Product> findAll(int page, int size) {
+        Pageable pageable = PageRequest.of(page - 1, size);
+        return repository.findAll(pageable).map(mapper::map);
     }
 }
