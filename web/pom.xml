@@ -111,6 +111,21 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>com.eightbits.commerce.retail</groupId>
+                <artifactId>gs1-schema-downloader</artifactId>
+                <version>1.0.2-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>download-gs1-schema</goal>
+                        </goals>
+                        <configuration>
+                            <url>http://www.gdsregistry.org/3.1/schemas/</url>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
